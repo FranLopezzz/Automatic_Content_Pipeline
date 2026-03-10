@@ -1,0 +1,12 @@
+{
+  "morfeo_labs": {
+    "name": "Morfeo Labs",
+    "description": "Pipeline principal — productos y marcas argentinas",
+    "active": true
+  },
+  "animado": {
+    "name": "Animado",
+    "description": "Variante estilo animado",
+    "active": true
+  }
+}

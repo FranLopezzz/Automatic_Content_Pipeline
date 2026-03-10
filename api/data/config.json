@@ -1,0 +1,29 @@
+{
+  "pipeline": {
+    "stages": ["pending", "brief", "portrait", "hero", "multishot", "video", "published"],
+    "auto_advance": false,
+    "schedule": {
+      "enabled": false,
+      "runs_per_day": 4,
+      "hours": [9, 12, 15, 18]
+    }
+  },
+  "guion": {
+    "fields": ["HOOK", "STORY_1", "STORY_2", "PLOT_TWIST", "CTA"],
+    "style": "ugc_organico_con_plot_twist",
+    "language": "es-AR"
+  },
+  "multishot": {
+    "count": 10,
+    "selection_count": 5
+  },
+  "video": {
+    "duration_per_clip_seconds": 10,
+    "clips_count": 5,
+    "format": "vertical_9_16"
+  },
+  "publish": {
+    "platform": "postiz",
+    "mode": "draft"
+  }
+}
