@@ -1,4 +1,4 @@
-"""Morfeo UGC Engine — Pipeline Orchestrator
+"""Franlopezaz UGC Engine — Pipeline Orchestrator
 
 Usage:
     python pipeline.py --run-id 20260310_143022 --advance-one
@@ -102,7 +102,7 @@ def worker_loop():
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Morfeo UGC Engine Pipeline")
+    parser = argparse.ArgumentParser(description="Franlopezaz UGC Engine Pipeline")
     parser.add_argument("--run-id", help="Run ID to process")
     parser.add_argument("--stage", help="Specific stage to execute")
     parser.add_argument("--advance-one", action="store_true", help="Advance run by one stage")

@@ -1,4 +1,4 @@
-"""Morfeo UGC Engine — Character Prebuild
+"""Franlopezaz UGC Engine — Character Prebuild
 
 Pre-generates character portraits for faster pipeline execution.
 Useful for building a pool of characters before scheduled runs.
@@ -52,7 +52,7 @@ def prebuild_character(marca_id=None):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Morfeo Character Prebuild")
+    parser = argparse.ArgumentParser(description="Franlopezaz Character Prebuild")
     parser.add_argument("--count", type=int, default=1, help="Number of characters to generate")
     parser.add_argument("--marca", help="Specific brand ID")
 

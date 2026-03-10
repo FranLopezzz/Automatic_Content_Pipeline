@@ -1,4 +1,4 @@
-# Morfeo UGC Engine — Agent Instructions
+# Franlopezaz UGC Engine — Agent Instructions
 
 ## Qué es este proyecto
 
@@ -20,7 +20,7 @@ GET  /api/marcas                      — Listar marcas disponibles
 GET  /api/log?run_id=xxx              — Ver log de ejecución
 ```
 
-Headers requeridos: `Authorization: Bearer $MORFEO_API_TOKEN` + `x-project-id: morfeo_labs`
+Headers requeridos: `Authorization: Bearer $FRANLOPEZAZ_API_TOKEN` + `x-project-id: franlopezaz_labs`
 
 ## Stages
 

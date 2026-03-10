@@ -1,5 +1,5 @@
 function authMiddleware(req, res, next) {
-  const token = process.env.MORFEO_API_TOKEN;
+  const token = process.env.FRANLOPEZAZ_API_TOKEN;
   const authHeader = req.headers.authorization;
 
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
@@ -11,7 +11,7 @@ function authMiddleware(req, res, next) {
     return res.status(401).json({ error: 'Invalid token' });
   }
 
-  req.projectId = req.headers['x-project-id'] || 'morfeo_labs';
+  req.projectId = req.headers['x-project-id'] || 'franlopezaz_labs';
   next();
 }
 

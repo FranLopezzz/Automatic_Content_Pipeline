@@ -36,7 +36,7 @@ def create_scheduler(run_callback):
             "cron",
             hour=hour,
             minute=0,
-            id=f"morfeo_run_{hour}",
+            id=f"franlopezaz_run_{hour}",
             replace_existing=True
         )
         print(f"[scheduler] Scheduled run at {hour}:00")

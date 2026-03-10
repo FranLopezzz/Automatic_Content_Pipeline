@@ -1,6 +1,6 @@
-# Morfeo UGC Engine
+# Franlopezaz UGC Engine
 
-Sistema autónomo de generación de contenido UGC. Genera 4 videos TikTok/Instagram por día con lip-sync, personajes generados por IA y plot twist de Morfeo Labs.
+Sistema autónomo de generación de contenido UGC. Genera 4 videos TikTok/Instagram por día con lip-sync, personajes generados por IA y plot twist de Franlopezaz Labs.
 
 ## Arquitectura
 
@@ -32,8 +32,8 @@ cp .env.example .env   # Configurar API keys
 
 ```bash
 curl http://localhost:3336/api/runs \
-  -H "Authorization: Bearer $MORFEO_API_TOKEN" \
-  -H "x-project-id: morfeo_labs"
+  -H "Authorization: Bearer $FRANLOPEZAZ_API_TOKEN" \
+  -H "x-project-id: franlopezaz_labs"
 # → debe devolver []
 ```
 
@@ -56,7 +56,7 @@ curl http://localhost:3336/api/runs \
 ## Estructura
 
 ```
-morfeo-engine/
+franlopezaz-engine/
 ├── api/           — Express API (puerto 3336)
 ├── pipeline/      — Pipeline Python (stages de generación)
 ├── output/        — Outputs por run (gitignored)

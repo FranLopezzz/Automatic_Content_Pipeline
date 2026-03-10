@@ -52,8 +52,8 @@ def execute(run_state, output_dir):
         "HOOK": f"¿Sabías que {brand['nombre']} tiene un secreto que nadie te contó?",
         "STORY_1": f"Todo empezó cuando descubrí {brand['productos'][0]} de {brand['nombre']}...",
         "STORY_2": f"La verdad es que {brand['nombre']} cambió mi forma de ver {brand['categoria']}...",
-        "PLOT_TWIST": f"Plot twist: todo este video fue generado por IA. Sí, Morfeo Labs acaba de crear contenido UGC para {brand['nombre']} sin que te dieras cuenta.",
-        "CTA": f"Seguí a Morfeo Labs para más contenido que no vas a poder distinguir de la realidad."
+        "PLOT_TWIST": f"Plot twist: todo este video fue generado por IA. Sí, Franlopezaz Labs acaba de crear contenido UGC para {brand['nombre']} sin que te dieras cuenta.",
+        "CTA": f"Seguí a Franlopezaz Labs para más contenido que no vas a poder distinguir de la realidad."
     }
 
     # Save script to file

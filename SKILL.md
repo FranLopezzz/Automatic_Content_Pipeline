@@ -1,7 +1,7 @@
-# Morfeo UGC Engine Skill
+# Franlopezaz UGC Engine Skill
 
 Sistema autónomo de generación de videos UGC para marcas argentinas.
-Genera contenido TikTok/Instagram que parece orgánico pero termina con un plot twist revelando que es IA de Morfeo Labs.
+Genera contenido TikTok/Instagram que parece orgánico pero termina con un plot twist revelando que es IA de Franlopezaz Labs.
 
 ## Cuándo usar esta skill
 
@@ -12,7 +12,7 @@ Cuando Paul pida:
 - "avanzá el run de [marca] al siguiente paso"
 - "mostrá el estado del engine"
 - "publicá el video de [run]"
-- Cualquier operación sobre el Morfeo UGC Engine
+- Cualquier operación sobre el Franlopezaz UGC Engine
 
 ---
 
@@ -20,12 +20,12 @@ Cuando Paul pida:
 
 ### API Local
 - **Base URL**: `http://localhost:3336`
-- **Token**: Configurado en `api/.env` como `MORFEO_API_TOKEN`
-- **Auth header**: `Authorization: Bearer $MORFEO_API_TOKEN`
-- **Project header**: `x-project-id: morfeo_labs`
+- **Token**: Configurado en `api/.env` como `FRANLOPEZAZ_API_TOKEN`
+- **Auth header**: `Authorization: Bearer $FRANLOPEZAZ_API_TOKEN`
+- **Project header**: `x-project-id: franlopezaz_labs`
 
 ### Proyectos disponibles
-- `morfeo_labs` — Pipeline principal (productos argentinos)
+- `franlopezaz_labs` — Pipeline principal (productos argentinos)
 - `animado` — Variante estilo animado
 
 ---
@@ -34,9 +34,9 @@ Cuando Paul pida:
 
 ```bash
 BASE="http://localhost:3336"
-TOKEN="$MORFEO_API_TOKEN"
+TOKEN="$FRANLOPEZAZ_API_TOKEN"
 H_AUTH="Authorization: Bearer $TOKEN"
-H_PROJ="x-project-id: morfeo_labs"
+H_PROJ="x-project-id: franlopezaz_labs"
 ```
 
 ### Ver todos los runs
@@ -140,13 +140,13 @@ curl -s "$BASE/api/marcas" -H "$H_AUTH" -H "$H_PROJ"
 ### Verificar que la API está levantada
 ```bash
 curl -s http://localhost:3336/api/runs \
-  -H "Authorization: Bearer $MORFEO_API_TOKEN" \
-  -H "x-project-id: morfeo_labs"
+  -H "Authorization: Bearer $FRANLOPEZAZ_API_TOKEN" \
+  -H "x-project-id: franlopezaz_labs"
 ```
 
 ### Ver logs
 ```bash
-pm2 logs morfeo-engine-api --lines 50
+pm2 logs franlopezaz-engine-api --lines 50
 ```
 
 ---

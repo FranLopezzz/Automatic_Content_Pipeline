@@ -25,9 +25,9 @@ app.use('/api/log', logsRouter);
 
 // Health check (no auth)
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok', engine: 'morfeo-ugc-engine', port: PORT });
+  res.json({ status: 'ok', engine: 'franlopezaz-ugc-engine', port: PORT });
 });
 
 app.listen(PORT, () => {
-  console.log(`Morfeo UGC Engine API running on port ${PORT}`);
+  console.log(`Franlopezaz UGC Engine API running on port ${PORT}`);
 });

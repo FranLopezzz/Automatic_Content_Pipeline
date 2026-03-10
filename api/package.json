@@ -1,7 +1,7 @@
 {
-  "name": "morfeo-engine-api",
+  "name": "franlopezaz-engine-api",
   "version": "1.0.0",
-  "description": "Morfeo UGC Engine — API para generación autónoma de contenido UGC",
+  "description": "Franlopezaz UGC Engine — API para generación autónoma de contenido UGC",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
