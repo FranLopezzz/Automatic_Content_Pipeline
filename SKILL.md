@@ -20,8 +20,8 @@ Cuando Paul pida:
 
 ### API Local
 - **Base URL**: `http://localhost:3336`
-- **Token**: `morfeo-admin-2026` (o `$MORFEO_API_TOKEN`)
-- **Auth header**: `Authorization: Bearer morfeo-admin-2026`
+- **Token**: Configurado en `api/.env` como `MORFEO_API_TOKEN`
+- **Auth header**: `Authorization: Bearer $MORFEO_API_TOKEN`
 - **Project header**: `x-project-id: morfeo_labs`
 
 ### Proyectos disponibles
@@ -34,7 +34,7 @@ Cuando Paul pida:
 
 ```bash
 BASE="http://localhost:3336"
-TOKEN="morfeo-admin-2026"
+TOKEN="$MORFEO_API_TOKEN"
 H_AUTH="Authorization: Bearer $TOKEN"
 H_PROJ="x-project-id: morfeo_labs"
 ```
@@ -140,7 +140,7 @@ curl -s "$BASE/api/marcas" -H "$H_AUTH" -H "$H_PROJ"
 ### Verificar que la API está levantada
 ```bash
 curl -s http://localhost:3336/api/runs \
-  -H "Authorization: Bearer morfeo-admin-2026" \
+  -H "Authorization: Bearer $MORFEO_API_TOKEN" \
   -H "x-project-id: morfeo_labs"
 ```
 

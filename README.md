@@ -32,7 +32,7 @@ cp .env.example .env   # Configurar API keys
 
 ```bash
 curl http://localhost:3336/api/runs \
-  -H "Authorization: Bearer morfeo-admin-2026" \
+  -H "Authorization: Bearer $MORFEO_API_TOKEN" \
   -H "x-project-id: morfeo_labs"
 # → debe devolver []
 ```
